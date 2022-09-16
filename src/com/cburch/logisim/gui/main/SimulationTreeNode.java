@@ -15,7 +15,7 @@ public abstract class SimulationTreeNode implements TreeNode {
 		return false;
 	}
 
-	public abstract Enumeration<?> children();
+	public abstract Enumeration<? extends javax.swing.tree.TreeNode> children();
 	public abstract boolean getAllowsChildren();
 	public abstract TreeNode getChildAt(int childIndex);
 	public abstract int getChildCount();
